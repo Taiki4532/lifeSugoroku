@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG to PDF</title>
+</head>
+<body>
+    <h1>SVGの上にテキストを追加しPDFを作成</h1>
+
+    <svg id="svgCanvas" width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="500" height="300" fill="lightgray"></rect>
+        <text x="50" y="50" font-size="20" fill="black" id="svgText">初期テキスト</text>
+    </svg>
+
+    <input type="text" id="textInput" placeholder="テキストを入力">
+    <button onclick="updateSVG()">SVGに追加</button>
+    <button onclick="exportPDF()">PDFをダウンロード</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
