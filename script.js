@@ -31,3 +31,6 @@ function exportPDF() {
 
     img.src = url;
 }
+
+window.updateSVG = updateSVG;
+window.exportPDF = exportPDF;
